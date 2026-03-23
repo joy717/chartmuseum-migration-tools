@@ -2,23 +2,23 @@ run:
   timeout: 10m
 
 linters:
-  enable-all: true
-  disable:
-    - deadcode # Deprecated: replaced by unused
-    - depguard
-    - execinquery # Deprecated since v1.58.0
-    - exhaustivestruct # Deprecated: replaced by exhaustruct
-    - exportloopref # Deprecated since v1.60.2: unnecessary with Go 1.22+
-    - forbidigo
-    - golint # Deprecated: replaced by revive
-    - gomnd # Deprecated since v1.58.0: replaced by mnd
-    - ifshort # Deprecated
-    - interfacer # Deprecated
-    - maligned # Deprecated: replaced by govet 'fieldalignment'
-    - nosnakecase # Deprecated: replaced by revive(var-naming)
-    - scopelint # Deprecated: replaced by revive
-    - structcheck # Deprecated: replaced by unused
-    - tagliatelle
-    - tenv # Deprecated since v1.64.2: replaced by usetesting
-    - testpackage
-    - varcheck # Deprecated: replaced by unused
+  enable:
+    - bodyclose
+    - errcheck
+    - errorlint
+    - exhaustive
+    - goconst
+    - gocritic
+    - gocyclo
+    - govet
+    - ineffassign
+    - misspell
+    - nakedret
+    - prealloc
+    - revive
+    - staticcheck
+    - typecheck
+    - unconvert
+    - unparam
+    - unused
+    - whitespace
