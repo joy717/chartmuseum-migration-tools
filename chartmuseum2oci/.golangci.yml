@@ -5,9 +5,11 @@ linters:
   enable-all: true
   disable:
     - deadcode # Deprecated: replaced by unused
+    - depguard
     - execinquery # Deprecated since v1.58.0
     - exhaustivestruct # Deprecated: replaced by exhaustruct
     - exportloopref # Deprecated since v1.60.2: unnecessary with Go 1.22+
+    - forbidigo
     - golint # Deprecated: replaced by revive
     - gomnd # Deprecated since v1.58.0: replaced by mnd
     - ifshort # Deprecated
